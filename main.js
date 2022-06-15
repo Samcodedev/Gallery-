@@ -12,6 +12,8 @@
 //     })
 // }
 
+// Am trying to fetch an API to display the images but finding it difficult to do so.
+
 
 
 let nature = document.getElementById("img")
