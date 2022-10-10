@@ -1,0 +1,127 @@
+html,body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: blueviolet;
+    margin-bottom: 50px;
+}
+.top h1{
+    margin-block-end: 0px;
+}
+.container{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+.av-img{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0 5px 0;
+}
+.card{
+    flex: 1;
+    height: 100%;
+    max-height: 350px;
+    min-height: 350px;
+    margin: 0px 5px 15px 5px;
+    display: flex;
+    justify-content: center;
+    background: rgba(137, 43, 226, 0.597);
+    
+    /* background-image: url('./img/1a7070be96322f31d46d8a85035b3031.jpg');
+    background-position: center;
+    background-size: cover; */
+}
+.av-img a{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.av-img a:link{
+    background-color: transparent;
+}
+.card img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(40%);
+}
+.card:hover{
+    transform: skew(1deg,1deg);
+    box-shadow: -7px 7px 4px rgba(80, 80, 80, 0.271), -7px 7px 4px rgba(174, 15, 179, 0.271);
+}
+.card h2{
+    position: absolute;
+    color: #fff;
+    margin-top: 140px;
+}
+.card a {
+    position: absolute;
+    margin-top: 140px;
+    text-decoration-line: none;
+    height: fit-content;
+}
+.card a button{
+    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    height: 40px;
+}
+.top ul{
+    display: flex;
+    width: auto;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+}
+.top ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+    text-decoration-line: underline;
+}
+
+
+@media screen and (max-width: 768px) {
+    .av-img{
+        flex-direction: column;
+        width: 70%;
+    }
+    .card{
+        min-height: 250px;
+        max-height: 250px;
+    }
+    .card h2{
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+}
+.social a img{
+    width: 30px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: blueviolet;
+    margin-bottom: 5px;
+}
